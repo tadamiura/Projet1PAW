@@ -1,33 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
 
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style-type:none;
-  }
-  
-.path {
-
+body {
+  margin: 0px;
+  background-color: #EECDA3;
 }
+  
+hr {
+  margin: 2% 0;
+  border: 0;
+  border-top: 1px solid #bbbbbb;
+}
+
+.path {
+  padding: 2%;
+  display: flex;
+}
+.path div {
+  flex: none;
+  display: inline;
+  padding: 1% 1%;
+}
+.push {
+  margin-left: auto;
+}
+
+.title {
+  padding: 3% 5%;
+}
+.title h1{
+  font-size: 3rem;
+	line-height: 90%;
+  margin: 40px 0;
+  color: #F47862;
+  font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 /* photo box */
 /*https://codepen.io/johnmotyljr/pen/cDpEH?editors=1100*/
-
-@-webkit-keyframes TMNT {
-	0%  { left: 0px; }
-	100% { left: -1200px; }
+/* to use a caption, dig in figcaption*/
+ul {
+  padding: 0;
+  margin: 0;
 }
-
 a.prev,a.next {
 	height:91px;
-	position:absolute;
+  position:absolute;
+  float: inherit;
 	width:43px;
-	top:50%;
+	top:25%;
 	margin-top:-30px;
 	opacity:0.6;
 	text-indent:-99999px;
 	cursor:pointer;
-	-webkit-transition:opacity 200ms ease-out;
+
 }
 a.prev:hover,a.next:hover {
 	opacity:1;
@@ -41,20 +69,62 @@ a.prev:hover,a.next:hover {
 	background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -167px 25px;
 }
 .slider {
-	height:70vh;
-	position: relative;
+  height:50vh;
+  max-height: 700px;
+  max-width: 1150px;
 }
 .slide {
 	position:absolute;
 	height:100%;
-	width:100%;
+  width:100%;
+  list-style-type:none;
 }
 .slider .slide:target {
 	z-index: 100;
 }
+
 img {
-	max-width:80%;
-	width:80%;
+	max-width:100%;
+	width:100%;
 	position: absolute;
-	left:0;
+}
+
+
+/* tablet */
+
+@media only screen and (min-width: 600px) {
+  .slider {
+    height:50vh;
+  }
+  a.prev,a.next {
+    height:91px;
+    position:absolute;
+    float: inherit;
+    width:43px;
+    top:25%;
+    margin-top:-30px;
+    opacity:0.6;
+    text-indent:-99999px;
+    cursor:pointer;
+  
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 768px)  {
+  .slider {
+    height:50vh;
+  }
+  a.prev,a.next {
+    height:91px;
+    position:absolute;
+    float: inherit;
+    width:43px;
+    top:25%;
+    margin-top:-30px;
+    opacity:0.6;
+    text-indent:-99999px;
+    cursor:pointer;
+  
+  }
 }

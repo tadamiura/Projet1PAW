@@ -7,11 +7,12 @@ body {
     width: 130px;/* Set the width of the sidebar */
     position: fixed;/* Fixed Sidebar (stay in place on scroll) */
     z-index: 1;/* Stay on top */
-    top: 20px;/* Stay on top */
+    top: 200px;/* Stay on top */
     left: 10px;
     background: white;/* White */
     overflow-x: hidden;/* Disable horizontal scroll */
     padding: 8px 0;
+    border: ridge;
   }
   
   .sidenav a {

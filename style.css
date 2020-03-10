@@ -1,33 +1,63 @@
 body {
     margin: 0;
 }
+
 footer {
     background: #EECDA3;
     background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
     background: linear-gradient(to right, #EF629F, #EECDA3);
+    height: 200px;
 }
 footer a {
     text-decoration: none;
 }
 .footer-desktop {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
-.follow {
+.follow { 
     color: white;
     font-size: 30px;
-}   
-@media screen and (min-width: 800px) {
+}  
+.title-footer {
+    font-size: 30px;
+}
+a.footer-link {
+    color: white;
+}
+a.footer-link:hover {
+    color: #faf0e6;
+}
+.a-follow {
+    margin: 5px;
+}
+@media screen and (min-width: 501px) {
     .a-follow:hover {
-        opacity: 0.8;
+    opacity: 0.8;
     }
     footer {
         display: flex;
-        flex-direction: row;
-    }
+        justify-content: space-around;
+    }   
+   .footer-link {
+    display: flex;
+    flex-direction: column;
+   }
+   h6.follow {
+       margin-top: 23px;
+       margin-bottom: 10px;
+       margin-left: 10px;
+   }
+   h4.title-footer {
+       margin-top: 21px;
+       margin-bottom: 22px;
+   }
+   h5.title-footer {
+       margin-top: 22px;
+       margin-bottom: 25px;
+   }
 }
-@media screen and (max-width: 292px) {
-
+@media screen and (max-width: 500px) {
     .footer-desktop {
         display: none;
     }
@@ -46,7 +76,7 @@ footer a {
     .div-follow {
         padding-bottom: 20px;
     }
-    .a-follow {
-        margin: 5px;
+    h6.follow {
+        margin-bottom: 30px;
     }
 }

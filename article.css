@@ -1,20 +1,60 @@
 
 
-
-span.cssbox_full {
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    cursor: default;
-    transition: opacity 0.5s linear;
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
   }
   
+.path {
 
-  a:target > img.cssbox_thumb + span.cssbox_full {
-    opacity: 1;
-    pointer-events: initial;
-  }
-  
-  span.cssbox_full {
-    cursor: initial;
-  }
+}
+
+/* photo box */
+/*https://codepen.io/johnmotyljr/pen/cDpEH?editors=1100*/
+
+@-webkit-keyframes TMNT {
+	0%  { left: 0px; }
+	100% { left: -1200px; }
+}
+
+a.prev,a.next {
+	height:91px;
+	position:absolute;
+	width:43px;
+	top:50%;
+	margin-top:-30px;
+	opacity:0.6;
+	text-indent:-99999px;
+	cursor:pointer;
+	-webkit-transition:opacity 200ms ease-out;
+}
+a.prev:hover,a.next:hover {
+	opacity:1;
+}
+.prev {
+	left:0;
+	background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -200px 25px;
+}
+.next {
+	right:0;
+	background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -167px 25px;
+}
+.slider {
+	height:70vh;
+	position: relative;
+}
+.slide {
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+.slider .slide:target {
+	z-index: 100;
+}
+img {
+	max-width:80%;
+	width:80%;
+	position: absolute;
+	left:0;
+}

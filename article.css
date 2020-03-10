@@ -89,6 +89,10 @@ img {
 	position: absolute;
 }
 
+/* text */
+.section {
+  position: static;
+}
 
 /* tablet */
 

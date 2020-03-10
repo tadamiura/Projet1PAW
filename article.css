@@ -18,7 +18,7 @@ hr {
 .path div {
   flex: none;
   display: inline;
-  padding: 1% 1%;
+  padding: 1% 1% 0% 1%;
 }
 .push {
   margin-left: auto;
@@ -28,9 +28,9 @@ hr {
   padding: 3% 5%;
 }
 .title h1{
-  font-size: 3rem;
+  font-size: 2rem;
 	line-height: 90%;
-  margin: 40px 0;
+  margin: 20px 0;
   color: #F47862;
   font-family: 'Cardo', Garamond, 'Times New Roman', serif;
   text-align: center;
@@ -46,6 +46,9 @@ hr {
 
 .slider {
   width: 100%;
+  height: 100%;
+  max-width: 700px;
+  max-height: 700px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -117,6 +120,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  max-width: 700px;
+  max-height: 700px;
 }
 
 .slider > a {
@@ -152,7 +157,7 @@ img {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding: 4%;
+  padding: 1% 3% 3% 3%;
 }
 
 .pastryinfo > article {
@@ -180,6 +185,16 @@ img {
 /* tablet */
 
 @media only screen and (min-width: 600px) {
+  .title h1{
+    font-size: 2.5rem;
+    line-height: 90%;
+    margin: 40px 0;
+    color: #F47862;
+    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
   .slider {
     width: 90%;
     text-align: center;
@@ -190,8 +205,19 @@ img {
 
 /* desktop */
 @media only screen and (min-width: 768px)  {
+  .title h1{
+    font-size: 3rem;
+    line-height: 90%;
+    margin: 40px 0;
+    color: #F47862;
+    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
   .slider {
-    width: 80%;
+    width: 75%;
+    height: 75%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

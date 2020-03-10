@@ -76,7 +76,7 @@ div.navbar{
 .navbar {
 display: flex;
 justify-content: space-around;
-background-color: #333;
+background-color: #d9b99b;
 overflow: hidden;
 position: fixed;
 bottom: 0;
@@ -87,7 +87,7 @@ width: 100%;
 .navbar a {
 float: left;
 display: block;
-color: #f2f2f2;
+color: #544c44;
 text-align: center;
 padding: 14px 8px;
 text-decoration: none;
@@ -103,7 +103,7 @@ color: black;
 /* Add a color to the active/current link */
 .navbar a.active {
 background-color: #EF629F;
-color: #333;
+color: #ffe5ea;
 }
 }
 /* End NAVBAR */

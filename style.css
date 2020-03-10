@@ -1,5 +1,38 @@
-/* Mobile Styles */
-@media only screen and (max-width: 961px) {
+body {
+    margin: 0;
+}
+
+footer {
+    background: #EECDA3;
+    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
+    background: linear-gradient(to right, #EF629F, #EECDA3);
+}
+footer a {
+    text-decoration: none;
+}
+.footer-desktop {
+    color: white;
+    font-size: 30px;
+}
+.follow {
+    color: white;
+    font-size: 30px;
+}   
+@media screen and (min-width: 501px) {
+.a-follow:hover {
+    opacity: 0.8;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+div.navbar{
+    display: none;
+}
+}
+@media screen and (max-width: 500px) {
+
     /* Place the navbar at the bottom of the page, and make it stick */
     .navbar {
         display: flex;
@@ -35,37 +68,6 @@
       }
     }
     /* End Mobile Styles */
-
-body {
-    margin: 0;
-}
-
-footer {
-    background: #EECDA3;
-    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
-    background: linear-gradient(to right, #EF629F, #EECDA3);
-}
-footer a {
-    text-decoration: none;
-}
-.footer-desktop {
-    color: white;
-    font-size: 30px;
-}
-.follow {
-    color: white;
-    font-size: 30px;
-}   
-@media screen and (min-width: 800px) {
-    .a-follow:hover {
-        opacity: 0.8;
-    }
-    footer {
-        display: flex;
-        flex-direction: row;
-    }
-}
-@media screen and (max-width: 292px) {
 
     .footer-desktop {
         display: none;

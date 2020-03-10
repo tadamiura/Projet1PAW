@@ -67,7 +67,7 @@ div.navbar{
         color: #333;
       }
     }
-    /* End Mobile Styles */
+ 
 
     .footer-desktop {
         display: none;
@@ -91,3 +91,4 @@ div.navbar{
         margin: 5px;
     }
 }
+   /* End Mobile Styles */

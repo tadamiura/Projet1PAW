@@ -17,7 +17,10 @@ body {
 }
 }
 @media screen and (max-width: 500px) {
-
+body{
+    margin-left: 15px;
+    margin-right: 15px;
+}
 /* Start Concept & About me CSS  */
 h1{
 

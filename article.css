@@ -2,43 +2,30 @@
 
 body {
   margin: 0px;
- 
 }
   
-hr {
-  margin: 2% 0;
-  border: 0;
-  border-top: 1px solid #bbbbbb;
+.top {
+    background: url('https://images.unsplash.com/photo-1578125689787-50a5c9fc6b2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') center;
+    background-size: cover;
+    padding: 2.5rem 2rem;
+ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
 }
 
-/*
-.path {
-  padding: 2%;
-  display: flex;
-}
-.path div {
-  flex: none;
-  display: inline;
-  padding: 1% 1% 0% 1%;
-}
-.push {
-  margin-left: auto;
-}
-*/
 
-.title {
-  padding: 3% 5%;
-}
-.title h1{
-  font-size: 2rem;
-	line-height: 90%;
-  margin: 20px 0;
-  color: #F47862;
-  font-family: 'Cardo', Garamond, 'Times New Roman', serif;
-  text-align: center;
-  text-transform: uppercase;
+.top > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  color: white;
 }
 
+.top > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: white;
+}
 
 /* photo box */
 /* to use a caption, dig in figcaption*/
@@ -54,6 +41,7 @@ hr {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3rem;
 }
 
 .slides {
@@ -144,13 +132,13 @@ img {
 .slider > a:focus {
   background: #000;
 }
-
-/* Don't need button navigation */
 @supports (scroll-snap-type) {
   .slider > a {
     display: none;
   }
 }
+
+
 
 /* text */
 
@@ -168,21 +156,70 @@ img {
   margin: 3%;
 }
 
+
+/* shop and chef infos */ 
 .extrainfo {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  margin: 2%;
+  padding: 2%;
+}
+.extrainfo > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+.extrainfo > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+  list-style: none;
+}
+.extrainfo > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
 }
 
-.extrainfo > article {
-  display: inline-block;
-  background-color: rgb(230, 230, 230);
-  width: 45%;
-  height: 250px;
-  margin: 1%
+.extrainfo > ul > li > figure > img {
+  width: 100%;
 }
+
+.extrainfo > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.extrainfo > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.extrainfo > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.extrainfo > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+.extrainfo > ul > li > a:hover {
+  opacity: .6;
+}
+
 
 /* tablet */
 

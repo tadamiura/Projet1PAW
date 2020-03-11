@@ -4,20 +4,29 @@ body {
 
 /* Side-bar */
 .sidenav {
-    width: 130px;/* Set the width of the sidebar */
+    width: 150px;/* Set the width of the sidebar */
+    height: 300px;
     position: fixed;/* Fixed Sidebar (stay in place on scroll) */
     z-index: 1;/* Stay on top */
-    top: 200px;/* Stay on top */
-    left: 10px;
+    top: 50px;/* Stay on top */
+    left: 40px;
     background: white;/* White */
     overflow-x: hidden;/* Disable horizontal scroll */
     padding: 8px 0;
-    border: ridge;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: rgb(92, 90, 90) solid 0.5px;
+    padding-bottom: 90px;
+  }
+  .continent {
+      color: pink;
+      font-size: 30px;
   }
   
   .sidenav a {
     padding: 6px 8px 6px 16px;
-    text-decoration: none;
+    text-decoration: none;  
     font-size: 25px;
     color: black;
     display: block;

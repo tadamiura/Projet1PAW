@@ -37,7 +37,7 @@ header
     padding: 0px 10px;
   }
 /* End Side-bar */
-
+ /*  START FOOTER  */
 footer {
     background: rgb(164,71,81);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,71,81,1) 90%);
@@ -69,6 +69,7 @@ a.footer-link:hover {
 .a-follow {
     margin: 5px;
 }
+/* END FOOTER */
 @media screen and (min-width: 501px) {
     .a-follow:hover {
     opacity: 0.8;
@@ -181,7 +182,7 @@ border-radius: 5px;
 width: 40px;
 }
 /* End NAVBAR */
-
+ /* START FOOTER MEDIA QUERIES*/
 .div-follow {
 display: flex;
 justify-content: center;
@@ -212,5 +213,5 @@ header {
     height: 50px;
     margin-bottom: 25px;
 }
+/* END FOOTER MEDIA QUERIES*/
 }
-   /* End Mobile Styles */

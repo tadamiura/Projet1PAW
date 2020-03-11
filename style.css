@@ -2,6 +2,35 @@ body {
     margin: 0;
 }
 
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #EECDA3;  
+    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  
+    background: linear-gradient(to right, #EF629F, #EECDA3); 
+    height: 150px;
+}
+
+.logo
+{
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+   
+}
+
+.nav a
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0 15px;
+}
+
 /* Side-bar */
 .sidenav {
     width: 130px;/* Set the width of the sidebar */
@@ -103,6 +132,29 @@ a.footer-link:hover {
     }
 }
 @media screen and (max-width: 500px) {
+    
+    header
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EECDA3;  
+    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  
+    background: linear-gradient(to right, #EF629F, #EECDA3); 
+    }
+
+    .logo
+    {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    }
+
+    .nav
+    {
+    display: none;
+    }
+
 /* no side bar on mobile */
 .sidenav {
     display: none;
@@ -187,3 +239,4 @@ h6.follow {
     margin-bottom: 10px;
     margin-top: 0;
 }
+

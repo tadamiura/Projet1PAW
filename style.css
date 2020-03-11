@@ -2,97 +2,194 @@ body {
     margin: 0;
 }
 
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(164,71,81);
+    background: linear-gradient(180deg, rgba(164,71,81,1) 0%, rgba(255,255,255,1) 100%);
+    height: 150px;
+}
 
+.logo
+{
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+   
+}
+
+.nav a
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0 15px;
+}
+
+/* Side-bar */
+.sidenav {
+    width: 200px;/* Set the width of the sidebar */
+    position: fixed;/* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;/* Stay on top */
+    top: 90px;/* Stay on top */
+    left: 10px;
+    background: white;/* White */
+    overflow-x: hidden;/* Disable horizontal scroll */
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: rgb(92, 90, 90) solid 0.5px;
+    padding-bottom: 90px;
+    height: 400px;
+  }
+
+  .continent {
+    color: pink;
+    font-size: 30px;
+}
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: grey;
+  }
+  
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+/* End Side-bar */
+
+footer {
+    background: rgb(164,71,81);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,71,81,1) 85%);
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    text-decoration: none;
+}
+.footer-desktop {
+    color: white;
+    font-size: 15px;
+}
+.follow { 
+    color: white;
+    font-size: 20px;
+}  
+.title-footer {
+    font-size: 20px;
+}
+a.footer-link {
+    color: white;
+}
+a.footer-link:hover {
+    color: #faf0e6;
+}
+.a-follow {
+    margin: 5px;
+}
 @media screen and (min-width: 501px) {
+    .a-follow:hover {
+    opacity: 0.8;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }   
+   .footer-link {
+    display: flex;
+    flex-direction: column;
+   }
+   h6.follow {
+       margin-top: 25px;
+       margin-bottom: 10px;
+       margin-left: 10px;
+   }
+   h4.title-footer {
+       margin-top: 23px;
+       margin-bottom: 22px;
+   }
+   h5.title-footer {
+       margin-top: 24px;
+       margin-bottom: 25px;
+   }
+   .a-follow:hover {
+    opacity: 0.8;
+    }
+    footer {
+    display: flex;
+    flex-direction: row;
+    }
+    
     div.navbar{
     display: none;
     }
-
-    /* Start Concept & About me CSS  */
-h1{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-h2{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-h3{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.text-concept{
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 55px;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    height: auto;
-    border-radius: 20px;
-}
-
+    header {
+        height: 80px;
+    }
+    footer {
+        height: 100px;
+        padding-bottom: 35px;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
 }
 @media screen and (max-width: 500px) {
+    
+    header
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
+    .logo
+    {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    }
 
-
-/* Start Concept & About me CSS  */
-h1{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-h2{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-h3{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.text-concept{
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 55px;
-}
-
-
-img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-}
-
-/* End Concept & About me CSS */
+    .nav
+    {
+    display: none;
+    }
 
 /* no side bar on mobile */
 .sidenav {
     display: none;
 }
-
-/* START NAVBAR*/
+.footer-desktop {
+    display: none;
+}
+/* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
 display: flex;
 justify-content: space-around;
-background-color: #eecda3;
+background-color: #a44751;
 overflow: hidden;
 position: fixed;
 bottom: 0;
 width: 100%;
 z-index: 1;
 border-top: white solid 0.4px;
-margin: auto;
 }
 
 /* Style the links inside the navigation bar */
@@ -104,12 +201,10 @@ text-align: center;
 padding: 14px 8px;
 text-decoration: none;
 font-size: 17px;
-margin: auto;
 }
 
 /* Change the color of links on hover */
 .navbar a:hover {
-background-color: #EECDA3;
 color: white
 }
 
@@ -119,5 +214,37 @@ color: white;
 border-radius: 5px;
 width: 40px;
 }
-}
 /* End NAVBAR */
+
+.div-follow {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.div-follow {
+padding-bottom: 20px;
+}
+.img-social {
+width: 40px;
+height: 40px;
+margin: 5px;
+}
+.div-follow {
+    padding-bottom: 20px;
+}
+h6.follow {
+    display: none;
+}
+footer {
+    height: 110px;
+}
+header {
+    height: 100px;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+}
+}
+   /* End Mobile Styles */

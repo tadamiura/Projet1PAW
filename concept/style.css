@@ -13,10 +13,28 @@ body {
         margin-right: auto;
         width: 800px;
         height: auto;
-        border-radius: 8px;
+        border-radius: 20px;
 }
 }
 @media screen and (max-width: 500px) {
+
+header
+{
+display: flex;
+justify-content: center;
+align-items: center;
+background: #EECDA3;  
+background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  
+background: linear-gradient(to right, #EF629F, #EECDA3); 
+}
+
+.logo
+{
+border-radius: 50%;
+width: 110px;
+height: 110px;
+}
+
 
 /* Start Concept & About me CSS  */
 h1{

@@ -2,28 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/5fd27989da.js" crossorigin="anonymous"></script>
   <meta name="author" content="Margot,Lena,Maxime,Tada,Florent,Jeremie,Aurélien">
   <meta name="description" content="Premier Projet Wild code school">
-  <title>Titre de la page</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
-<body>
-  <header>
-    <!-- logo -->
-  </header>
-  <div>
-    <!-- nav bar en bas de la page , style menu facebook  -->
+
+<header>
+
+  <div class="logo">
+      <a href="accueil"><img class="logo" src="img/logodefdef.png" alt="logo" width="140px" height="140px"></a>
   </div>
+
+  <nav class="nav">
+      <a href="accueil.com" title="Accueil">Home</a>
+      <a href="concept.com" title="Concept">Concept</a>
+      <a href="about_me.com" title="About Me">About Me</a> 
+      <a href="partners.com" title="Partners">Partners</a>
+      <a href="portfolio.com" title="Portfolio">Portfolio</a> 
+      <a href="contact.com" title="Contact">Contact</a>
+  </nav>
+  
+</header>
+
+    <body>
+    <!-- Start Nav-bar -->
+    <div class="navbar">
+        <a href="#home"class="active"><i class="fas fa-home"></i></a>
+        <a href="#portofolio"><i class="fas fa-camera"></i></a>
+        <a href="#concept"><i class="fas fa-globe-africa"></i></a>
+        <a href="#partners"><i class="fas fa-plane-departure"></i></a>
+        <a href="#contact"><i class="fas fa-at"></i></a>
+      </div>
+        <!-- End Nav-bar -->
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <p class="continent">Continent</p>
+      <a href="#africa">Africa</a>
+      <a href="#asia">Asia</a>
+      <a href="#europa">Europa</a>
+      <a href="#oceania">Oceania</a>
+      <a href="#north-america">North America</a>
+      <a href="#south-america">South America</a>
+    </div>
+    <!-- End Side navigation -->
+
  <div>
    <!-- article en colonne  photo,nom,petite description -->
    <article></article>
    <article></article>
    <article></article>
  </div>
-
  <footer>
 <!-- footer en colonne comme la quete 8 flexbox -->
+<div class="footer-desktop">
+  <h4 class="title-footer">About me</h4>
+  <a class="footer-link" href="">Presentation</a>
+  <a class="footer-link" href="">Contact me</a>
+  <a class="footer-link" href="">Gallery</a>
+</div>
+<div class="footer-desktop">
+  <h5 class="title-footer">Partners</h5>
+  <a class="footer-link" href="">partenaire 1</a>
+  <a class="footer-link" href="">partenaire 2</a>
+  <a class="footer-link" href="">devenez partenaire</a>
+</div>
+  <div>
+    <div><h6 class="follow" class="title-footer">Follow Me</h6></div>
+      <div class="div-follow">
+        <a class="a-follow" href="https://www.facebook.com/"><img class="img-social" src="https://zupimages.net/up/20/11/vovy.png" alt="" width="50px"/></a>
+        <a class="a-follow" href="https://www.instagram.com/?hl=fr"><img class="img-social" src="https://zupimages.net/up/20/11/8d72.png" alt="" width="50px"/></a>
+        <a class="a-follow" href="https://twitter.com/login?lang=fr"><img class="img-social" src="https://zupimages.net/up/20/11/vzmu.png" alt="" width="50px"/></a>
+        <a class="a-follow" href="https://www.linkedin.com/feed"><img class="img-social" src="https://zupimages.net/up/20/11/z0sa.png" alt="" width="50px"/></a>
+    </div>  
+  </div>
  </footer>
 </body>
 </html>

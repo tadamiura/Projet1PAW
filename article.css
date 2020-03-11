@@ -2,10 +2,11 @@
 
 body {
   margin: 0px;
+  font-family: 'Cardo', Garamond, 'Times New Roman', serif;
 }
   
 .top {
-    background: url('https://images.unsplash.com/photo-1578125689787-50a5c9fc6b2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') center;
+    background: url('https://images.unsplash.com/photo-1578905269334-6d7f455bb35e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80') center;
     background-size: cover;
     padding: 2.5rem 2rem;
  
@@ -148,6 +149,7 @@ img {
   flex-direction: row;
   justify-content: center;
   padding: 1% 3% 3% 3%;
+
 }
 
 .pastryinfo > article {
@@ -207,7 +209,7 @@ img {
   padding: .5rem 1rem;
   margin: .5rem;
 
-  background-color: goldenrod;
+  background-color:#F47862;
   text-decoration: none;
   color: white;
   border-radius: .25rem;
@@ -224,15 +226,6 @@ img {
 /* tablet */
 
 @media only screen and (min-width: 600px) {
-  .title h1{
-    font-size: 2.5rem;
-    line-height: 90%;
-    margin: 40px 0;
-    color: #F47862;
-    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
-    text-align: center;
-    text-transform: uppercase;
-  }
   
   .slider {
     width: 90%;
@@ -244,19 +237,9 @@ img {
 
 /* desktop */
 @media only screen and (min-width: 768px)  {
-  
-  .path {
-    display: none;
-  }
-    
-  .title h1{
-    font-size: 3rem;
-    line-height: 90%;
-    margin: 40px 0;
-    color: #F47862;
-    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
-    text-align: center;
-    text-transform: uppercase;
+
+  .top h1{
+    font-size: 4rem;
   }
   
   .slider {
@@ -267,17 +250,4 @@ img {
     margin-right: auto;
   }  
 
-  .pastryinfo {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding: 4%;
-  }
-  
-  .pastryinfo > article {
-    display: inline-block;
-    width: 31%;
-    margin: 1%;
-  }
 }

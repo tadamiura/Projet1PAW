@@ -2,7 +2,7 @@
 
 body {
   margin: 0px;
-  background-color: #EECDA3;
+ 
 }
   
 hr {
@@ -11,6 +11,7 @@ hr {
   border-top: 1px solid #bbbbbb;
 }
 
+/*
 .path {
   padding: 2%;
   display: flex;
@@ -23,6 +24,7 @@ hr {
 .push {
   margin-left: auto;
 }
+*/
 
 .title {
   padding: 3% 5%;
@@ -205,6 +207,11 @@ img {
 
 /* desktop */
 @media only screen and (min-width: 768px)  {
+  
+  .path {
+    display: none;
+  }
+    
   .title h1{
     font-size: 3rem;
     line-height: 90%;

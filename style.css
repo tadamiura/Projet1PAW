@@ -182,17 +182,14 @@ a.footer-link:hover {
     header {
         height: 80px;
     }
-<<<<<<< HEAD
-=======
 
-    footer {
-        padding-bottom: 35px;
-    }
-
->>>>>>> gallery
     .logo {
         width: 70px;
         height: 70px;
+    }
+
+    footer {
+        padding-bottom: 35px;
     }
 }
 

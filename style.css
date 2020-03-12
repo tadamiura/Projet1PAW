@@ -145,6 +145,9 @@ a.footer-link:hover {
     footer {
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
+        height: 100px;
+        padding-bottom: 40px;
     }
 
     .footer-link {
@@ -167,16 +170,6 @@ a.footer-link:hover {
         margin-top: 24px;
         margin-bottom: 25px;
     }
-
-    .a-follow:hover {
-        opacity: 0.8;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-    }
-
     div.navbar {
         display: none;
     }
@@ -184,12 +177,6 @@ a.footer-link:hover {
     header {
         height: 80px;
     }
-
-    footer {
-        height: 100px;
-        padding-bottom: 40px;
-    }
-
     .logo {
         width: 70px;
         height: 70px;

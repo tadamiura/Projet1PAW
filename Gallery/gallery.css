@@ -65,12 +65,10 @@ header {
 }
 
 body {
-	min-height: 100vh;
 	background-color: #fafafa;
 }
 
 .container {
-	max-width: 100rem;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
 }

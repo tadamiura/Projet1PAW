@@ -24,9 +24,14 @@ body {
 }
 
 .bloc:hover {
-    -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.container1 .bloc:first-child
+{
+    margin-top: 40px;
 }
 
 .cards {
@@ -98,7 +103,7 @@ footer {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #904e95, #e96443);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 200px;
+    height: auto;
     bottom: 0;
     width: 100%;
     -webkit-box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.4);
@@ -177,6 +182,14 @@ a.footer-link:hover {
     header {
         height: 80px;
     }
+<<<<<<< HEAD
+=======
+
+    footer {
+        padding-bottom: 35px;
+    }
+
+>>>>>>> gallery
     .logo {
         width: 70px;
         height: 70px;
@@ -186,6 +199,7 @@ a.footer-link:hover {
 @media screen and (max-width: 500px) {
     .bloc {
         width: 70%;
+        margin: 15px;
     }
 
     header {
@@ -261,6 +275,7 @@ a.footer-link:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
     }
 
     .div-follow {

@@ -1,446 +1,133 @@
-@import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAW -Europe</title>
+    <link rel="stylesheet" href="article.css">
+    <script src="https://kit.fontawesome.com/5fd27989da.js" crossorigin="anonymous"></script>
+</head>
 
-header, body {
-  margin: 0px;
-  font-family: 'Cardo', Garamond, 'Times New Roman', serif;
-}
+<header>
 
-/* nav bar */
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgb(164,71,81);
-    height: 150px;
-}
-.logo
-{
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
-   
-}
-.nav a
-{
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    padding: 0 15px;
-}
+  <div class="logo">
+      <a href="accueil"><img class="logo" src="img/logodefdef.png" alt="logo" width="140px" height="140px"></a>
+  </div>
 
-/* title area*/
-.top {
-    background: url('https://images.unsplash.com/photo-1578905269334-6d7f455bb35e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80') center;
-    background-size: cover;
-    padding: 2.5rem 2rem;
- 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    align-items: center;
-}
-.top > h1 {
-  font-size: 4rem;
-  padding-bottom: 1rem;
-  color: white;
-}
-.top > article > p {
-  font-size: 1.5rem;
-  font-weight: 200;
-  color: white;
-}
-
-/* photo box */
-.slider * {
-  box-sizing: border-box;
-}
-.slider {
-  width: 100%;
-  height: 100%;
-  max-width: 700px;
-  max-height: 700px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
-}
-.slides {
-  display: flex;
+  <nav class="nav">
+    <a href="index.html" title="Accueil">Home</a>
+    <a href="concept.html" title="Presentation">Presentation</a>
+    <a href="gallery.html" title="Gallert">Gallery</a>
+    <a href="contact.html" title="Contact">Contact</a>
+  </nav>
   
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-   
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  /*
-  scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: mandatory;
-  */
-}
-.slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.slides::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-.slides::-webkit-scrollbar-track {
-  background: transparent;
-}
-.slides > div {
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  margin-right: 50px;
-  border-radius: 10px;
-  background: #eee;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  position: relative;
+</header>
+
+  <body>
+    <!-- Start Nav-bar -->
+    <div class="navbar">
+      <a href="#home"class="active"><i class="fas fa-home"></i></a>
+      <a href="#portofolio"><i class="fas fa-camera"></i></a>
+      <a href="#concept"><i class="fas fa-globe-africa"></i></a>
+      <a href="#partners"><i class="fas fa-plane-departure"></i></a>
+      <a href="#contact"><i class="fas fa-at"></i></a>
+    </div>
+    <!-- End Nav-bar -->
+
+
+    <section class="top">
+      <h1>Europe</h1>
+      <article>
+        <p>blabla i can explain a short description on the desserts in europe... and i dont know what to write right now</p>
+      </article>
+    </section>
+    
+    
+    <div class="slider">
+      <div class="slides">
+        <div id="slide-1">
+          <img class="img" src="https://i.imgur.com/9VHsKe3.jpg" alt="strawberries pie">
+        </div>
+        <div id="slide-2">
+          <img class="img" src="https://i.imgur.com/3tExqsl.jpg" alt="macarons">
+        </div>
+        <div id="slide-3">
+          <img class="img" src="https://i.imgur.com/809mfSh.jpg" alt="frosted apples">
+        </div>
+      </div>      
+      <a href="#slide-1">1</a>
+      <a href="#slide-2">2</a>
+      <a href="#slide-3">3</a>
+    </div>
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-}
-/*.slides > div:target {
-  transform: scale(0.8); 
-} */
-.author-info {
-  background: rgba(0, 0, 0, 0.75);
-  color: white;
-  padding: 0.75rem;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-}
-.author-info a {
-  color: white;
-}
-.slider img {
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 700px;
-  max-height: 700px;
-}
-.img-social {
-  width: 35px;
-  height: 35px;
-}
-.slider > a {
-  display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: white;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 0 0.5rem 0;
-  position: relative;
-}
-.slider > a:active {
-  top: 1px;
-}
-.slider > a:focus {
-  background: #000;
-}
-@supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
-  }
-}
-
-
-
-/* text */
-
-.pastryinfo {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  padding: 1% 3% 3% 3%;
-}
-.pastryinfo > article {
-  display: inline-block;
-  width: 100%;
-  margin: 3%;
-}
-
-
-/* shop and chef infos */ 
-.extrainfo {
-  padding: 2%;
-}
-.extrainfo > ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1rem;
-}
-.extrainfo > ul > li {
-  border: 1px solid #E2E2E2;
-  border-radius: .5rem;
-  list-style: none;
-}
-.extrainfo > ul > li > figure {
-  max-height: 220px;
-  overflow: hidden;
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
-  position: relative;
-}
-.extrainfo > ul > li > figure > img {
-  width: 100%;
-
-}
-.extrainfo > ul > li > figure > figcaption {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0,0,0,.7);
-  width: 100%;
-}
-.extrainfo > ul > li > figure > figcaption > h3 {
-  color: white;
-  padding: .75rem;
-  font-size: 1.25rem;
-}
-.extrainfo > ul > li > p {
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 1rem .75rem;
-  color: #666666;
-}
-.extrainfo > ul > li > a {
-  padding: .5rem 1rem;
-  margin: .5rem;
-
-  background-color: goldenrod;
-  text-decoration: none;
-  color: white;
-  border-radius: .25rem;
-  text-align: center;
-  display: inline-block;
-  transition: all .3s;
-}
-.extrainfo > ul > li > a:hover {
-  opacity: .6;
-}
-
-
-/* tablet */
-
-@media only screen and (min-width: 600px) {
-  .slider {
-    width: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* desktop */
-@media only screen and (min-width: 768px)  {
-  .top h1{
-    font-size: 4rem;
-  }
-  .slider {
-    width: 75%;
-    height: 75%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }  
-}
-
-
-
-
-
-/*footer*/
-
-footer {
-  background: rgb(164,71,81);
-  height: 200px;
-  bottom: 0;
-  width: 100%;
-}
-footer a {
-  text-decoration: none;
-}
-.footer-desktop {
-  color: white;
-  font-size: 15px;
-}
-.follow { 
-  color: white;
-  font-size: 20px;
-}  
-.title-footer {
-  font-size: 20px;
-}
-a.footer-link {
-  color: white;
-}
-a.footer-link:hover {
-  color: #faf0e6;
-}
-.a-follow {
-  margin: 5px;
-}
-@media screen and (min-width: 501px) {
-.a-follow:hover {
-  opacity: 0.8;
-  }
-  footer {
-      display: flex;
-      justify-content: space-around;
-  }   
- .footer-link {
-  display: flex;
-  flex-direction: column;
- }
- h6.follow {
-     margin-top: 25px;
-     margin-bottom: 10px;
-     margin-left: 10px;
- }
- h4.title-footer {
-     margin-top: 23px;
-     margin-bottom: 22px;
- }
- h5.title-footer {
-     margin-top: 24px;
-     margin-bottom: 25px;
- }
- .a-follow:hover {
-  opacity: 0.8;
-  }
-  footer {
-  display: flex;
-  flex-direction: row;
-  }
   
-  div.navbar{
-  display: none;
-  }
-  header {
-      height: 80px;
-  }
-  footer {
-      height: 100px;
-      padding-bottom: 35px;
-  }
-  .logo {
-      width: 70px;
-      height: 70px;
-  }
-}
-@media screen and (max-width: 500px) {
-  
-  header
-  {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
+    <section class="pastryinfo">
+      <article>
+        <h2>Strawberries Pie</h2>
+        <p>The pie is one of the oldest pastries. The pastry chefs start by making savory and then sweet pies, which were very successful until the 17th century. Since the Middle Ages, the pie has known many diverse and varied recipes.
+          Sweet pies are served cold or lukewarm, most often as a dessert. The garnish can be composed of fruits, fresh or dried, which are placed whole, in compote, cut into pieces or in rings, decorated with chocolate, cream, whipped cream, etc .; you can also use rice. Apple, pear, fig and mirabelle pies are common types of desserts in Europe.</p>
+      </article>
+      <article>
+        <h2>Macarons</h2>
+        <p>Macarons are elegant little sandwiches that are made with meringue, almond flour, and buttercream filling. Now that we have that figured out, let’s move on to some history.The first known appearance of the macaron in Europe was all the way back in the Middle Ages. At the time, the macaron was a small sweet made of almonds, egg white and sugar, and was crunchy on the outside and soft on the inside. Even though the French take credit for the macaron, Catherine de’ Medici likely brought the maccherone to France in the 16th century from Italy, where it had been produced in Venetian monasteries since the 8th century. Back then, they were rather humbly called ‘priest’s bellybuttons,’ due to the pastry’s shape.</p>
+      </article>
+      <article>
+        <h2>Frosted Apples</h2>
+        <p>Its a frosted apple stuffed with fruits. Its a frosted apple stuffed with fruits. Its a frosted apple stuffed with fruits. </p>
+      </article>
+    </section>
 
-  .logo
-  {
-  border-radius: 50%;
-  width: 110px;
-  height: 110px;
-  }
 
-  .nav
-  {
-  display: none;
-  }
+    <section class="extrainfo">
+      <ul>
+        <li>
+          <figure>
+            <img src="https://i.imgur.com/hatyHKa.jpg" alt="shop">
+            <figcaption><h3>Le Meurice</h3></figcaption>
+          </figure>
+          <p>
+            You can taste all the fabulous desserts here in the center of Paris. They offer from a 3 star Michelin level desserts to a tea time package.
+          </p>
+          <a href="#">Visit Website</a>
+        </li>
+        <li>
+          <figure>
+            <img src="https://i.imgur.com/1p17ciB.jpg" alt="chef">
+            <figcaption><h3>Pierre Herme</h3></figcaption>
+          </figure>
+          <p>
+            He is officially the most famous pastry chef in Europe. All the flavors he creates is suprisingly amazing.
+          </p>
+          <a href="#">Visit Website</a>
+        </li>
+      </ul>
+    </section>
 
-/* no side bar on mobile */
-.sidenav {
-  display: none;
-}
-.footer-desktop {
-  display: none;
-}
 
-/* Place the navbar at the bottom of the page, and make it stick */
-.navbar {
-display: flex;
-justify-content: space-around;
-background-color: #a44751;
-overflow: hidden;
-position: fixed;
-bottom: 0;
-width: 100%;
-z-index: 1;
-border-top: white solid 0.4px;
-}
-
-/* Style the links inside the navigation bar */
-.navbar a {
-float: left;
-display: block;
-color: #544c44;
-text-align: center;
-padding: 14px 8px;
-text-decoration: none;
-font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.navbar a:hover {
-color: white
-}
-
-/* Add a color to the active/current link */
-.navbar a.active {
-color: white;
-border-radius: 5px;
-width: 40px;
-}
-/* End NAVBAR */
-
-.div-follow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  .div-follow {
-  padding-bottom: 20px;
-  }
-  .img-social {
-  width: 40px;
-  height: 40px;
-  margin: 5px;
-  }
-  .div-follow {
-    padding-bottom: 20px;
-  }
-  h6.follow {
-    display: none;
-  }
-  footer {
-    height: 110px;
-  }
-  header {
-    height: 100px;
-  }
-  .logo {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 25px;
-  }
-  }
-   /* End Mobile Styles */
+    <footer>
+      <!-- footer en colonne comme la quete 8 flexbox -->
+      <div class="footer-desktop">
+        <h4 class="title-footer">About me</h4>
+        <a class="footer-link" href="">Presentation</a>
+        <a class="footer-link" href="">Contact me</a>
+        <a class="footer-link" href="">Gallery</a>
+      </div>
+      <div class="footer-desktop">
+        <h5 class="title-footer">Partners</h5>
+        <a class="footer-link" href="">partenaire 1</a>
+        <a class="footer-link" href="">partenaire 2</a>
+        <a class="footer-link" href="">devenez partenaire</a>
+      </div>
+      <div>
+        <div><h6 class="follow" class="title-footer">Follow Me</h6></div>
+        <div class="div-follow">
+          <a class="a-follow" href="https://www.facebook.com/"><img class="img-social" src="https://zupimages.net/up/20/11/vovy.png" alt="" width="50px"/></a>
+          <a class="a-follow" href="https://www.instagram.com/?hl=fr"><img class="img-social" src="https://zupimages.net/up/20/11/8d72.png" alt="" width="50px"/></a>
+          <a class="a-follow" href="https://twitter.com/login?lang=fr"><img class="img-social" src="https://zupimages.net/up/20/11/vzmu.png" alt="" width="50px"/></a>
+          <a class="a-follow" href="https://www.linkedin.com/feed"><img class="img-social" src="https://zupimages.net/up/20/11/z0sa.png" alt="" width="50px"/></a>
+        </div>  
+      </div>
+    </footer>
+    
+  </body>
+</html>

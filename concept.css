@@ -126,6 +126,7 @@ header {
 
     /* Start Concept & About me CSS  */
 h1{
+    font-weight: 550;
     margin-left: 30px;
     margin-right: 30px;
     padding-left: 40px;
@@ -133,6 +134,7 @@ h1{
 }
 
 h2{
+    font-weight: 550;
     margin-left: 30px;
     margin-right: 30px;
     padding-left: 40px;
@@ -140,6 +142,7 @@ h2{
 }
 
 h3{
+    font-weight: 550;
     margin-left: 30px;
     margin-right: 30px;
     padding-left: 40px;

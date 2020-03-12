@@ -25,9 +25,14 @@ body {
 }
 
 .bloc:hover {
-    -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.container1 .bloc:first-child
+{
+    margin-top: 40px;
 }
 
 .cards {
@@ -151,7 +156,7 @@ footer {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #904e95, #e96443);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 200px;
+    height: auto;
     bottom: 0;
     width: 100%;
     -webkit-box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.4);
@@ -198,6 +203,9 @@ a.footer-link:hover {
     footer {
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
+        height: 100px;
+        padding-bottom: 40px;
     }
 
     .footer-link {
@@ -220,16 +228,6 @@ a.footer-link:hover {
         margin-top: 24px;
         margin-bottom: 25px;
     }
-
-    .a-follow:hover {
-        opacity: 0.8;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-    }
-
     div.navbar {
         display: none;
     }
@@ -238,20 +236,20 @@ a.footer-link:hover {
         height: 80px;
     }
 
-    footer {
-        height: 100px;
-        padding-bottom: 40px;
-    }
-
     .logo {
         width: 70px;
         height: 70px;
+    }
+
+    footer {
+        padding-bottom: 35px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .bloc {
         width: 70%;
+        margin: 15px;
     }
 
     .header-nav {
@@ -327,6 +325,7 @@ a.footer-link:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
     }
 
     .div-follow {

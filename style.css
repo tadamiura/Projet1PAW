@@ -231,8 +231,12 @@ a.footer-link:hover {
     }
 
     footer {
+<<<<<<< HEAD
+        padding-bottom: 35px;
+=======
         height: 100px;
         padding-bottom: 40px;
+>>>>>>> 69c59161694554efcfe46843519c5ce457cadbf9
     }
 
     .logo {

@@ -149,7 +149,7 @@ header {
   display: inline-flex;
   width: 1.5rem;
   height: 1.5rem;
-  background: white;
+  background: #d 8d8d8;
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -233,7 +233,7 @@ header {
   padding: .5rem 1rem;
   margin: .5rem;
 
-  background-color: goldenrod;
+  background-color: #e96443;
   text-decoration: none;
   color: white;
   border-radius: .25rem;

@@ -2,11 +2,61 @@ body {
     margin: 0;
 }
 
+/* START HEADER CSS */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #e96443;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #904e95, #e96443);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 150px;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    padding-right: 80px;
+}
+
+.nav a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0 15px;
+}
+.nav a:hover {
+    color: #FAF0E6;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+
+}
+
+/* END HEADER CSS */
 
 @media screen and (min-width: 501px) {
     div.navbar{
     display: none;
     }
+
+/* START HEADER CSS */
+
+header {
+    height: 80px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+/* END HEADER CSS */
 
     /* Start Concept & About me CSS  */
 h1{
@@ -41,7 +91,32 @@ img {
 
 }
 @media screen and (max-width: 500px) {
+/* START HEADER CSS */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    height: 100px;
+}
 
+img.logo {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.nav {
+    display: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+/* END HEADER CSS */
 
 
 /* Start Concept & About me CSS  */

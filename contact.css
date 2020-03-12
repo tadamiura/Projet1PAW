@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
+
 *
 {
     margin: 0;
@@ -6,7 +8,6 @@
 body
 {
     font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -38,7 +39,7 @@ header {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 0 15px;
 }
 
@@ -49,7 +50,7 @@ header {
 .background
 {
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,12 +61,12 @@ header {
     background-color: white;
     display: flex;
     justify-content: center;
-    height: 70%;
+    height: 75%;
     width: 60%;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 30px 10px #C5B9EC;
--moz-box-shadow: 0px 0px 30px 10px #C5B9EC;
-box-shadow: 0px 0px 30px 10px #C5B9EC;
+    -moz-box-shadow: 0px 0px 30px 10px #C5B9EC;
+    box-shadow: 0px 0px 30px 10px #C5B9EC;
 }
 
 /* .title
@@ -117,7 +118,7 @@ box-shadow: 0px 0px 30px 10px #C5B9EC;
     background-size: .8em;
     background-repeat: no-repeat;
     background-position: calc(100% - .4em) center;
-    width: 87%;
+    width: 89%;
 }
 
 .select2
@@ -138,7 +139,7 @@ box-shadow: 0px 0px 30px 10px #C5B9EC;
     background-size: .8em;
     background-repeat: no-repeat;
     background-position: calc(100% - .4em) center;
-    width: 85%;
+    width: 86%;
 }
 
 .size_email
@@ -196,7 +197,7 @@ box-shadow: 0px 0px 30px 10px #C5B9EC;
     background-size: .8em;
     background-repeat: no-repeat;
     background-position: calc(100% - .4em) center;
-    width: 85%;
+    width: 86%;
     height: 100px;
 }
 
@@ -260,7 +261,7 @@ a.footer-link:hover {
 @media screen and (min-width: 501px){
     .container
     {
-        width: 90%;
+        width: 65%;
         height: 80%;
     }  
     
@@ -314,10 +315,16 @@ a.footer-link:hover {
 }
 
 @media screen and (max-width: 500px) {
+
+    .background
+    {
+        height: 110vh;
+    }
+
     .container
     {
         width: 90%;
-        height: 80%;
+        height: 85%;
     }
 
     header {
@@ -412,5 +419,20 @@ a.footer-link:hover {
         color: white;
         border-radius: 5px;
         width: 40px;
+    }
+
+    .size_email
+    {
+        width: 80%;
+    }
+
+    .textinput
+    {
+        width: 81%;
+    }
+
+    .select2
+    {
+        width: 87%;
     }
 }

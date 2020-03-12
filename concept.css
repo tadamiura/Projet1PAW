@@ -118,37 +118,22 @@ header {
 h1{
     margin-left: 30px;
     margin-right: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 2em;
 }
 
 h2{
     margin-left: 30px;
     margin-right: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 2em;
 }
 
 h3{
     margin-left: 30px;
     margin-right: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 2em;
 }
 
 .text-concept{
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 55px;
-    padding-left: 50px;
-    padding-right: 50px;
-    line-height: 1.5;
-    font-size: 1.2em;
-    display: flex;
-    text-align: start;
 }
 
 img {

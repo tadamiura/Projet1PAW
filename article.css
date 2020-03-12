@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
 
-body {
+header, body {
   margin: 0px;
+  font-family: 'Cardo', Garamond, 'Times New Roman', serif;
 }
 
 /* nav bar */

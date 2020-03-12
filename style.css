@@ -99,15 +99,7 @@ figcaption {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #e96443;
-
-    background: -webkit-linear-gradient(to right, #904e95, #e96443);
-
     background: linear-gradient(to right, #904e95, #e96443);
-  
-    height: 150px;
-    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
     padding-right: 80px;
 } 
@@ -132,7 +124,7 @@ figcaption {
 .nav a:hover {
     color: #faf0e6;
 }
-*/
+
 
 
 .main {
@@ -190,7 +182,7 @@ a.footer-link:hover {
 }
 
 /* END FOOTER */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .a-follow:hover {
         opacity: 0.8;
     }

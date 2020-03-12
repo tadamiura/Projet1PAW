@@ -239,21 +239,25 @@ img.logo {
 
 /* Start Concept & About me CSS  */
 h1{
+    font-weight: 590;
     margin-left: 30px;
     margin-right: 30px;
 }
 
 h2{
+    font-weight: 590;
     margin-left: 30px;
     margin-right: 30px;
 }
 
 h3{
+    font-weight: 590;
     margin-left: 30px;
     margin-right: 30px;
 }
 
 .text-concept{
+    font-size: 17px;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 55px;

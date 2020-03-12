@@ -191,6 +191,10 @@ a.footer-link:hover {
         width: 70px;
         height: 70px;
     }
+
+    footer {
+        padding-bottom: 35px;
+    }
 }
 
 @media screen and (max-width: 500px) {

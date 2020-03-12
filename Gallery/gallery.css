@@ -1,53 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
 
-body {
-    margin: 0;
-    background: rgb(226, 223, 221);
-    background: linear-gradient(90deg, rgba(226, 223, 221, 1) 0%, rgba(250, 250, 250, 1) 100%);
-    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+tag,
+class,
+id name {
+	font-family: 'Cardo', Garamond, 'Times New Roman', serif;
 }
 
-.container1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.bloc {
-    width: 30%;
-    height: 40%;
-    margin: 50px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-}
-
-.bloc:hover {
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
-}
-
-.container1 .bloc:first-child
+*
 {
-    margin-top: 40px;
+	margin: 0;
 }
 
-.cards {
-    border-radius: 20px 20px 0 0;
-    max-width: 100%;
-    display: block;
-    height: auto;
+body
+{
+
 }
 
-figcaption {
-    color: black;
-    height: auto;
-    text-align: center;
-    padding: 8px;
-    font-weight: bold;
-    font-size: 1.4em;
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 header {
@@ -79,7 +56,7 @@ header {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding: 0 15px;
 }
 
@@ -87,12 +64,57 @@ header {
     color: #faf0e6;
 }
 
-.main {
-    margin-left: 140px;
-    /* Same width as the sidebar + left position in px */
-    font-size: 28px;
-    /* Increased text to enable scrolling */
-    padding: 0px 10px;
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
 }
 
 /*  START FOOTER  */
@@ -103,8 +125,6 @@ footer {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #904e95, #e96443);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: auto;
-    bottom: 0;
     width: 100%;
     -webkit-box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.4);
@@ -142,7 +162,8 @@ a.footer-link:hover {
 }
 
 /* END FOOTER */
-@media screen and (min-width: 501px) {
+
+@media screen and (min-width: 601px) {
     .a-follow:hover {
         opacity: 0.8;
     }
@@ -150,9 +171,6 @@ a.footer-link:hover {
     footer {
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
-        height: 100px;
-        padding-bottom: 40px;
     }
 
     .footer-link {
@@ -175,6 +193,16 @@ a.footer-link:hover {
         margin-top: 24px;
         margin-bottom: 25px;
     }
+
+    .a-follow:hover {
+        opacity: 0.8;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
     div.navbar {
         display: none;
     }
@@ -182,24 +210,22 @@ a.footer-link:hover {
     header {
         height: 80px;
     }
-<<<<<<< HEAD
-=======
 
     footer {
-        padding-bottom: 35px;
+        height: auto;
+		padding-bottom: 30px;
+		margin-top: 80px;
     }
 
->>>>>>> gallery
     .logo {
         width: 70px;
         height: 70px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .bloc {
         width: 70%;
-        margin: 15px;
     }
 
     header {
@@ -275,7 +301,6 @@ a.footer-link:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
     }
 
     .div-follow {
@@ -312,3 +337,4 @@ a.footer-link:hover {
 
     /* END FOOTER MEDIA QUERIES*/
 }
+

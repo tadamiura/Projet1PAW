@@ -187,7 +187,6 @@ a.footer-link:hover {
 }
 
 /* END FOOTER */
-<<<<<<< HEAD
 h2 {
     font-size: 2em;
 }
@@ -283,12 +282,6 @@ h6.follow {
     margin-bottom: 10px;
     margin-left: 10px;
 }
-=======
-@media screen and (min-width: 601px) {
-    .a-follow:hover {
-        opacity: 0.8;
-    }
->>>>>>> acf9f3df88d441de273243ede39dd811947ba28d
 
     footer {
         display: flex;
@@ -329,7 +322,6 @@ h6.follow {
         display: none;
     }
 
-<<<<<<< HEAD
 /* Start Concept & About me CSS  */
 h1{
     font-weight: 590;
@@ -355,27 +347,6 @@ h3{
     margin-right: 30px;
     margin-bottom: 55px;
 }
-=======
-    .header-nav {
-        height: 80px;
-    }
-
-    footer {
-        height: 100px;
-        padding-bottom: 40px;
-    }
-
-    .logo {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .bloc {
-        width: 70%;
-    }
->>>>>>> acf9f3df88d441de273243ede39dd811947ba28d
 
     .header-nav {
         display: flex;

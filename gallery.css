@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic');
-
 body {
     margin: 0;
     font-family: 'Cardo', Garamond, 'Times New Roman', serif;
 }
-
 
 /* *,
 *::before,
@@ -13,54 +11,55 @@ body {
 	box-sizing: border-box;
 } */
 
-
-
 /*new header*/
+
 .word {
-	color: #fff;
+    color: #fff;
     text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     max-width: 53.33rem;
-	margin: 0 auto;
-	position: relative;
-	z-index: 10;
-	transform: translateY(-50%);
-	top:50%;
-	text-align: center;
-}
-.header-img {
-	position: relative;
-	overflow: hidden;
-	scroll-snap-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-50%);
+    top: 50%;
     text-align: center;
+}
 
+.header-img {
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: center;
+    text-align: center;
     display: flex;
     align-items: center;
-    background: url(https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80) top
-        right / cover;
+    background: url(https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80) top right / cover;
     padding: 5em;
-	height: 20vh;
+    height: 130px;
 }
+
 .char {
     font-family: 'Open Sans';
-    font-size: 8vw; 
+    font-size: 8vw;
     margin-bottom: 0.25385rem;
     letter-spacing: 0.9rem;
     font-weight: 700;
 }
+
 .desc {
     font-family: 'Open Sans';
-    font-size: 3vw; 
+    font-size: 3vw;
     font-weight: 100;
     margin-bottom: 0.825rem;
 }
 
 @media screen and (max-width: 600px) {
     .header-img {
-    display: none;
+        display: none;
     }
 }
 
 /* nav bar desktop */
+
 .header-nav {
     position: relative;
     display: flex;
@@ -69,14 +68,12 @@ body {
     background: linear-gradient(to right, #904e95, #e96443);
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
     padding-right: 80px;
-} 
-
+}
 
 .logo {
     border-radius: 50%;
     width: 110px;
     height: 110px;
-
 }
 
 .nav a {
@@ -92,63 +89,63 @@ body {
     color: #faf0e6;
 }
 
-
-
 /*original*/
+
 body {
-	min-height: 100vh;
-	background-color: #fafafa;
+    min-height: 100vh;
+    background-color: #fafafa;
 }
 
 .container {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
 }
 
 .heading {
-	font-family: 'Cardo', Garamond, 'Times New Roman', serif;
-	font-size: 2rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
+    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    padding: 3.5rem 0;
+    color: #1a1a1a;
 }
 
 .heading span {
-	display: block;
+    display: block;
 }
 
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
 }
 
 .gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
 }
 
 .gallery-image:hover {
-	transform: scale(1.15);
+    transform: scale(1.15);
 }
 
 /*  START FOOTER  */
+
 footer {
     background: #e96443;
     /* fallback for old browsers */
@@ -198,56 +195,45 @@ a.footer-link:hover {
     .a-follow:hover {
         opacity: 0.8;
     }
-
     footer {
         display: flex;
         justify-content: space-around;
     }
-
     .footer-link {
         display: flex;
         flex-direction: column;
     }
-
     h6.follow {
         margin-top: 25px;
         margin-bottom: 10px;
         margin-left: 10px;
     }
-
     h4.title-footer {
         margin-top: 23px;
         margin-bottom: 22px;
     }
-
     h5.title-footer {
         margin-top: 24px;
         margin-bottom: 25px;
     }
-
     .a-follow:hover {
         opacity: 0.8;
     }
-
     footer {
         display: flex;
         flex-direction: row;
     }
-
     div.navbar {
         display: none;
     }
-
-    header-nav {
+    .header-nav {
         height: 80px;
     }
-
     footer {
         height: auto;
-		padding-bottom: 30px;
-		margin-top: 80px;
+        padding-bottom: 30px;
+        margin-top: 80px;
     }
-
     .logo {
         width: 70px;
         height: 70px;
@@ -258,33 +244,27 @@ a.footer-link:hover {
     .bloc {
         width: 70%;
     }
-
     .header-nav {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-right: 0;
     }
-
     img.logo {
         border-radius: 50%;
         width: 70px;
         height: 70px;
     }
-
     .nav {
         display: none;
     }
-
     /* no side bar on mobile */
     .sidenav {
         display: none;
     }
-
     .footer-desktop {
         display: none;
     }
-
     /* Place the navbar at the bottom of the page, and make it stick */
     .navbar {
         display: flex;
@@ -302,7 +282,6 @@ a.footer-link:hover {
         z-index: 1;
         border-top: white solid 0.4px;
     }
-
     /* Style the links inside the navigation bar */
     .navbar a {
         float: left;
@@ -313,19 +292,16 @@ a.footer-link:hover {
         text-decoration: none;
         font-size: 17px;
     }
-
     /* Change the color of links on hover */
     .navbar a:hover {
         color: white
     }
-
     /* Add a color to the active/current link */
     .navbar a.active {
         color: white;
         border-radius: 5px;
         width: 40px;
     }
-
     /* End NAVBAR */
     /* START FOOTER MEDIA QUERIES*/
     .div-follow {
@@ -333,39 +309,30 @@ a.footer-link:hover {
         justify-content: center;
         align-items: center;
     }
-
     .div-follow {
         padding-bottom: 20px;
     }
-
     .img-social {
         width: 40px;
         height: 40px;
         margin: 15px 5px;
     }
-
     .div-follow {
         padding-bottom: 20px;
     }
-
     h6.follow {
         display: none;
     }
-
     footer {
         height: 120px;
     }
-
     header-nav {
         height: 100px;
     }
-
     .logo {
         width: 50px;
         height: 50px;
         margin-bottom: 25px;
     }
-
     /* END FOOTER MEDIA QUERIES*/
 }
-

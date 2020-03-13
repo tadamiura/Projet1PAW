@@ -187,108 +187,10 @@ a.footer-link:hover {
 }
 
 /* END FOOTER */
-<<<<<<< HEAD
-h2 {
-    font-size: 2em;
-}
-h3 {
-    font-size: 2em;
-}
-.text-concept {
-    line-height: 1.8;
-    font-size: 1.2em;
-}
-
-@media screen and (min-width: 501px) {
-div.navbar{
-    display: none;
-}
-
-/* START HEADER CSS */
-
-header {
-    height: 80px;
-}
-
-.logo {
-    width: 70px;
-    height: 70px;
-}
-/* END HEADER CSS */
-
-    /* Start Concept & About me CSS  */
-h1{
-    font-weight: 550;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-h2{
-    font-weight: 550;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-h3{
-    font-weight: 550;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.text-concept{
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 55px;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    height: auto;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-}
-/* End concept & about me */
-
-/* START FOOTER */
-.a-follow:hover {
-    opacity: 0.8;
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    height: 100px;
-    padding-bottom: 40px;
-    flex-direction: row;
-}
-
-.footer-link {
-    display: flex;
-    flex-direction: column;
-}
-
-h6.follow {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-=======
 @media screen and (min-width: 601px) {
     .a-follow:hover {
         opacity: 0.8;
     }
->>>>>>> acf9f3df88d441de273243ede39dd811947ba28d
 
     footer {
         display: flex;
@@ -329,33 +231,6 @@ h6.follow {
         display: none;
     }
 
-<<<<<<< HEAD
-/* Start Concept & About me CSS  */
-h1{
-    font-weight: 590;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-h2{
-    font-weight: 590;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-h3{
-    font-weight: 590;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.text-concept{
-    font-size: 17px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 55px;
-}
-=======
     .header-nav {
         height: 80px;
     }
@@ -375,7 +250,6 @@ h3{
     .bloc {
         width: 70%;
     }
->>>>>>> acf9f3df88d441de273243ede39dd811947ba28d
 
     .header-nav {
         display: flex;

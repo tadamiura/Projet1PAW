@@ -18,16 +18,16 @@ body {
 .bloc {
     width: 30%;
     height: 40%;
-    margin: 50px;
+    margin: 2%;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 
 .bloc:hover {
-    -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(110, 110, 110, 0.75);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(110, 110, 110, 0.75);
+    box-shadow: 0px 0px 10px 5px rgba(110, 110, 110, 0.75);
 }
 
 .cards {
@@ -71,7 +71,7 @@ figcaption {
     background: url(https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80) top
         right / cover;
     padding: 5em;
-	height: 20vh;
+	height: 130px;
 }
 .char {
     font-family: 'Open Sans';
@@ -244,6 +244,7 @@ a.footer-link:hover {
 @media screen and (max-width: 600px) {
     .bloc {
         width: 70%;
+        margin: 3%;
     }
 
     .header-nav {
@@ -319,6 +320,7 @@ a.footer-link:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 8%;
     }
 
     .div-follow {
@@ -351,6 +353,10 @@ a.footer-link:hover {
         width: 50px;
         height: 50px;
         margin-bottom: 25px;
+    }
+
+    .container1 .bloc:first-child {
+        margin-top: 8%;
     }
 
     /* END FOOTER MEDIA QUERIES*/

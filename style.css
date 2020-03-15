@@ -247,11 +247,12 @@ a.footer-link:hover {
         margin: 3%;
     }
 
-    .header-nav {
+    div.header-nav {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-right: 0;
+        height: 75px;
     }
 
     img.logo {

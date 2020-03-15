@@ -26,7 +26,7 @@ body {
     background: url(https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80) top
         right / cover;
     padding: 5em;
-    height: 159px;
+    height: 130px;
 }
 .char {
     font-family: 'Open Sans';
@@ -211,8 +211,11 @@ a.footer-link:hover {
     div.navbar {
         display: none;
     }
-    .header-nav {
-        height: 88px;
+    div.header-nav {
+        height: 80px;
+    }
+    a.header-name {
+        font-size: 1.220em;
     }
     footer {
         height: 100px;
@@ -227,11 +230,12 @@ a.footer-link:hover {
     .bloc {
         width: 70%;
     }
-    .header-nav {
+    div.header-nav {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-right: 0;
+        height: 75px;
     }
     img.logo {
         border-radius: 50%;

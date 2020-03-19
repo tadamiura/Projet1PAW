@@ -1,10 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic');
 
+ /* DARK MODE */
+ :root {
+    --background-color: white;
+    --text-color: black;
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+  }
+  
+  [data-theme="dark"] {
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
+    /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+    --background-color: black;
+    --text-color: white;
+    --figcaption-color : white;
+
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  label{
+    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+  }
+
+
+/* END DARK MODE */
+
 body {
     margin: 0;
-    background: rgb(226, 223, 221);
-    background: linear-gradient(90deg, rgba(226, 223, 221, 1) 0%, rgba(250, 250, 250, 1) 100%);
     font-family: 'Cardo', Garamond, 'Times New Roman', serif;
 }
 
@@ -44,6 +70,7 @@ figcaption {
     padding: 8px;
     font-weight: bold;
     font-size: 1.4em;
+    color: var(--figcaption-color);
 }
 
 
@@ -181,6 +208,7 @@ a.footer-link:hover {
     margin: 5px;
 }
 
+
 /* END FOOTER */
 @media screen and (min-width: 601px) {
     .a-follow:hover {
@@ -239,6 +267,8 @@ a.footer-link:hover {
         width: 70px;
         height: 70px;
     }
+
+   
 }
 
 @media screen and (max-width: 600px) {

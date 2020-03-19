@@ -3,7 +3,7 @@
 
 /* Pop-Up Send */
 /* The actual popup */
-.popup .popuptext {
+.button .popuptext {
     visibility: hidden;
     width: 160px;
     background-color: #555;
@@ -19,7 +19,7 @@
   }
   
   /* Popup arrow */
-  .popup .popuptext::after {
+  .button .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -31,7 +31,7 @@
   }
   
   /* Toggle this class - hide and show the popup */
-  .popup .show {
+  .button .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;

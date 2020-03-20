@@ -43,6 +43,28 @@
     <a href="concept.html" title="Presentation">Presentation</a>
     <a href="gallery.html" title="Gallery">Gallery</a>
     <a href="contact.html" title="Contact">Contact</a>
+<!-- LOG IN -->
+<div class="open-btn">
+  <a class="open-button" onclick="openForm()">Log In</a>
+</div>
+<div class="login-popup">
+  <div class="form-popup" id="popupForm">
+    <form action="/action_page.php" class="form-container">
+      <h2>Please Log in</h2>
+      <label for="email">
+      <strong>E-mail</strong>
+      </label>
+      <input type="text" id="email" placeholder="Your Email" name="email" required>
+      <label for="psw">
+      <strong>Password</strong>
+      </label>
+      <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+      <button type="submit" class="btn">Log in</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+</div>
+<!-- END LOG IN -->
   </nav>
 </div>
 

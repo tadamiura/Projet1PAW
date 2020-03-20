@@ -1,5 +1,80 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic');
+/* LOG IN */
+* {
+    box-sizing: border-box;
+    }
+    body {
+    font-family: Roboto, Helvetica, sans-serif;
+    }
+    /* Fix the button on the left side of the page */
+    .open-btn {
+    display: flex;
+    justify-content: left;
+    }
+   
+    /* Position the Popup form */
+    .login-popup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    }
+    /* Hide the Popup form */
+    .form-popup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top:5%;
+    transform: translate(-45%,5%);
+    border: 2px solid #666;
+    z-index: 9;
+    }
+    /* Styles for the form container */
+    .form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    }
+    /* Full-width for input fields */
+    .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+    }
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+    /* Style submit/login button */
+    .form-container .btn {
+    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+    font-size: large;
+    background-color: #904e95;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 20px;
+    }
+    /* Style cancel button */
+    .form-container .cancel {
+    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+    font-size: large;
+    background-color: #e96443;
+    border-radius: 20px;
+    }
+    /* Hover effects for buttons */
+    .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    }
+/* END LOG IN */
+
 
  /* DARK MODE */
  :root {

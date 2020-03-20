@@ -1,3 +1,14 @@
+//LOG IN
+function openForm() {
+  document.getElementById("popupForm").style.display="block";
+}
+
+function closeForm() {
+  document.getElementById("popupForm").style.display="none";
+}
+//END LOG IN
+
+
 //DARKMODE
 let darkMode = document.getElementById("toggler");
 

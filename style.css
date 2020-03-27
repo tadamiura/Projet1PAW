@@ -205,7 +205,7 @@ figcaption {
 
 /*new header*/
 .header-img {
-    background-image: linear-gradient(135deg, rgba(52, 152, 219,0.5) 0%,rgba(243, 65, 65, 0.4) 100%), url("https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+    background-image: linear-gradient(135deg, rgba(52, 152, 219, 0.192) 0%,rgba(243, 65, 65, 0.082) 100%), url("https://images.unsplash.com/photo-1565878025373-d29620e25e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;

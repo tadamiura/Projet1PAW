@@ -3,91 +3,13 @@
 /* HOVER EFFECT */
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Fauna+One);
-.snip1482 {
-  font-family: 'Fauna One', Arial, sans-serif;
-  position: relative;
-  margin: 10px 20px;
-  min-width: 830px;
-  max-width: 295px;
-  min-height: 820px;
-  width: 100%;
-  color: #ffffff;
-  text-align: right;
-  line-height: 1.4em;
-  background-color: #1a1a1a;
-  font-size: 16px;
-}
-.snip1482 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.snip1482 img {
-  position: absolute;
-  right: 0%;
-  top: 50%;
-  opacity: 1;
-  width: 100%;
-  -webkit-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-}
-.snip1482 figcaption {
-  position: absolute;
-  width: 50%;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding: 20px 0 20px 20px;
-}
-.snip1482 h2,
-.snip1482 p {
-  margin: 0;
-  width: 100%;
-  -webkit-transform: translateX(20px);
-  transform: translateX(20px);
-  opacity: 0;
-}
-.snip1482 h2 {
-  font-family: 'Playfair Display', Arial, sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-.snip1482 p {
-  font-size: 0.8em;
-}
-.snip1482 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-figure.snip1482{
-    margin-left: auto;
-    margin-right: auto;
-}
-.snip1482:hover img,
-.snip1482.hover img {
-  width: 55%;
-  right: -10%;
-}
-.snip1482:hover figcaption h2,
-.snip1482.hover figcaption h2,
-.snip1482:hover figcaption p,
-.snip1482.hover figcaption p {
-  -webkit-transform: translateX(0px);
-  transform: translateX(0px);
-  opacity: 1;
-}
-/* HOVER EFFECR */
+/* HOVER EFFECT */
 
 body {
     margin: 0;
     font-family: 'Cardo', Garamond, 'Times New Roman', serif;
 }
+
 /*new header*/
 .word {
     color: #fff;
@@ -125,11 +47,6 @@ body {
     font-weight: 100;
     margin-bottom: 0.825rem;
 }
-@media screen and (max-width: 600px) {
-    .header-img {
-    display: none;
-    }
-}
 /* nav bar desktop */
 .header-nav {
     position: relative;
@@ -157,7 +74,7 @@ body {
 .nav a:hover {
     color: #FAF0E6;
 }
- /* Start Concept & About me CSS  */
+/* Start Concept & About me CSS  */
 .aboutme {
     text-align: center ;
 }
@@ -207,20 +124,7 @@ body {
     -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
 }
-@media screen and (max-width: 600px) {
-    .aboutme img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
-        -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-    }
-}
-/* End concept & about me */
+
 /*  START FOOTER  */
 footer {
     background: #E96443;
@@ -259,7 +163,125 @@ a.footer-link:hover {
 .a-follow {
     margin: 5px;
 }
-/* END FOOTER */
+
+/* FOR MOBILE */
+@media screen and (max-width: 600px) {
+
+    .header-img {
+        display: none;
+        }
+    
+    .header-nav {
+        height: 100px;
+    }
+    
+    div.header-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        height: 75px;
+        width: 100%;
+    }
+    img.logo {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+    }
+    .nav {
+        display: none;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    
+    .footer-desktop {
+        display: none;
+    }
+    /* Place the navbar at the bottom of the page, and make it stick */
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        background: #E96443;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #904E95, #E96443);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #904E95, #E96443);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        border-top: white solid 0.4px;
+    }
+    /* Style the links inside the navigation bar */
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 8px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /* Change the color of links on hover */
+    .navbar a:hover {
+        color: rgb(63, 63, 63);
+    }
+    /* Add a color to the active/current link */
+    .navbar a.active {
+        color: #c2c2c2;
+        border-radius: 5px;
+        width: 40px;
+    }
+    /* End NAVBAR */
+
+    /* START FOOTER MEDIA QUERIES*/
+    .div-follow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-follow {
+        padding-bottom: 20px;
+    }
+    .img-social {
+        width: 40px;
+        height: 40px;
+        margin: 15px 5px;
+    }
+
+    footer {
+        height: 120px;
+    }
+
+    .div-follow {
+        padding-bottom: 20px;
+    }
+
+    h6.follow {
+        display: none;
+    }
+
+
+    .aboutme img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+    }
+    /* END FOOTER MEDIA QUERIES*/
+}
+
 @media screen and (min-width: 601px) {
     .a-follow:hover {
         opacity: 0.8;
@@ -309,101 +331,84 @@ a.footer-link:hover {
         width: 70px;
         height: 70px;
     }
-}
-@media screen and (max-width: 600px) {
-    .bloc {
-        width: 70%;
-    }
-    div.header-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0;
-        height: 75px;
-    }
-    img.logo {
-        border-radius: 50%;
-        width: 70px;
-        height: 70px;
-    }
-    .nav {
-        display: none;
-    }
-    /* no side bar on mobile */
-    .sidenav {
-        display: none;
-    }
-    .footer-desktop {
-        display: none;
-    }
-    /* Place the navbar at the bottom of the page, and make it stick */
-    .navbar {
-        display: flex;
-        justify-content: space-around;
-        background: #E96443;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #904E95, #E96443);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #904E95, #E96443);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        overflow: hidden;
-        position: fixed;
-        bottom: 0;
+
+    .snip1482 {
+        font-family: 'Fauna One', Arial, sans-serif;
+        position: relative;
+        margin: 10px 20px;
+        min-width: 830px;
+        max-width: 295px;
+        min-height: 820px;
         width: 100%;
+        color: #ffffff;
+        text-align: right;
+        line-height: 1.4em;
+        background-color: #1a1a1a;
+        font-size: 16px;
+      }
+      .snip1482 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+      }
+      .snip1482 img {
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        opacity: 1;
+        width: 100%;
+        -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+      }
+      .snip1482 figcaption {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 20px 0 20px 20px;
+      }
+      .snip1482 h2,
+      .snip1482 p {
+        margin: 0;
+        width: 100%;
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+        opacity: 0;
+      }
+      .snip1482 h2 {
+        font-family: 'Playfair Display', Arial, sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      .snip1482 p {
+        font-size: 0.8em;
+      }
+      .snip1482 a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         z-index: 1;
-        border-top: white solid 0.4px;
-    }
-    /* Style the links inside the navigation bar */
-    .navbar a {
-        float: left;
-        display: block;
-        color: #544C44;
-        text-align: center;
-        padding: 14px 8px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    /* Change the color of links on hover */
-    .navbar a:hover {
-        color: white
-    }
-    /* Add a color to the active/current link */
-    .navbar a.active {
-        color: white;
-        border-radius: 5px;
-        width: 40px;
-    }
-    /* End NAVBAR */
-    /* START FOOTER MEDIA QUERIES*/
-    .div-follow {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .div-follow {
-        padding-bottom: 20px;
-    }
-    .img-social {
-        width: 40px;
-        height: 40px;
-        margin: 15px 5px;
-    }
-    .div-follow {
-        padding-bottom: 20px;
-    }
-    h6.follow {
-        display: none;
-    }
-    footer {
-        height: 120px;
-    }
-    .header-nav {
-        height: 100px;
-    }
-    .logo {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 25px;
-    }
-    /* END FOOTER MEDIA QUERIES*/
+      }
+      figure.snip1482{
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .snip1482:hover img,
+      .snip1482.hover img {
+        width: 55%;
+        right: -10%;
+      }
+      .snip1482:hover figcaption h2,
+      .snip1482.hover figcaption h2,
+      .snip1482:hover figcaption p,
+      .snip1482.hover figcaption p {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1;
+      }
 }
